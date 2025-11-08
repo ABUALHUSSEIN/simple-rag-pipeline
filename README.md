@@ -31,28 +31,3 @@ The process follows these steps:
 *   **Hugging Face `transformers`**: For the question-answering pipeline (Generator).
 *   **Hugging Face `sentence-transformers`**: For creating dense vector embeddings (Retriever).
 
-###  Output
-✅ Retriever model (MiniLM) loaded. 
-✅ Generator model (DistilBERT) loaded.
-   -> Running on GPU (Good!)
-📚 Knowledge base created with 5 documents.
---- Task 1: Encoding Knowledge Base ---
-✅ Success! Knowledge base has been encoded.
-   -> Embedding shape: torch.Size([5, 384])
-
-... [Other task outputs] ...
-
---- Task 4: Building the Full RAG Pipeline ---
-Testing the full RAG pipeline...
-Query: 'What is the capital of France?'
-   -> Retrieved Context: 'The capital of France is Paris, which is known for the Eiffel Tower.'
-   -> Final Answer: 'Paris'
-✅ Success! Your RAG pipeline is working!
-
---- Another Test ---
-Query: 'Who was the first person on the moon?'
-   -> Retrieved Context: 'The first person to walk on the Moon was Neil Armstrong in 1969.'
-   -> Final Answer: 'Neil Armstrong'
-✅ Correctly answered the second question!
-```
-
